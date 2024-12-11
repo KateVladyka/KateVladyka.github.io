@@ -1,35 +1,66 @@
 body{
-    background-color:#d0bae4;
+    background-color:#EBD3F8 !important;
     margin: 0;
     padding: 0;
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
 }
 header{
-    background-color: rgb(17, 24, 29);
+    background-color: #15021d;
    position: absolute;
    width: 100vw;
    top:0px;
    left:0px;
-   padding: 20px;
-   box-shadow: 3px 3px 3px #af618f;
+   padding: 0 20px;
+   box-shadow: 3px 3px 3px #000;
+   font-family: "Open Sans", sans-serif;
+   
+
 }
-header .container div{
-       display: flex;
-    align-items: center;
+header h1{
+    color:#EBD3F8;
+    text-align: left;
 }
-header ul.header-menu{
-    display: flex;
-    list-style: none;
-    margin-left: auto;
+h2{
+    font-family: "Montserrat Underline", sans-serif !important;
+    font-size: 40px;
+    font-weight: 700;
 }
-header ul.header-menu li{
-    padding: 0 10px 0px 10px;
+header a{
+    text-decoration: none;
+    font-weight: 400;    
+}
+section{
+    min-height: 100vh;
+    display: flex;  
+    justify-content: center;
+    border-bottom:30px solid #fff;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    font-size: 24px;
+}
+img{
+    max-width: 80vw;
+}
+section.aboutsection{
+    margin-top: 0px;
+    padding-top: 140px;   
+    background: rgba(46,7,63,.8) url(/assets/images/section-bg1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+section.aboutsection img{
+    width:500px; 
+    max-width:90vw;
+    border: solid 30px #fff;
+    animation: 3s ease-in 1s infinite reverse both running slidein;
+
 }
 h1{
-    color:#cc7feb;
-    font-family: "Rubik Wet Paint", system-ui;
-    font-weight: 400;
+    color:#fff;
+    font-family: "Open Sans", sans-serif;
+   /* font-family: "Rubik Wet Paint", system-ui;*/
+    font-weight: 700;
     font-style: normal;
     text-align: center;
     margin-bottom: 0;
@@ -41,10 +72,44 @@ h1{
     text-align: left;
     float:none;
 }
-.about{
-    margin-top: 140px;;
-}
+.about, 
+.works-info{
+    display: flex;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 100%;
+      
 
+}
+.education{
+background-color: #262b3f;
+}
+.about div,
+.education-info div,
+.hobby-info div,
+.works-info div{
+    background-color: #000;
+    color:#fff;
+    font-size: 24px;
+    font-weight: 200;
+    display: inline-block;
+}
+.education-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.koledzh{
+    max-width: 100%;
+    border: solid 20px #fff;
+    margin: 30px 0;
+    width: 400px;
+}
+.my-images{
+    max-width: 600px; 
+    background-color: #000;
+    border: solid 20px #fff;
+}
 .my-ul li, 
 .my-ul2 li, 
 .my-ul li a{
@@ -54,14 +119,22 @@ h1{
   display: flex;
   flex-direction: column;
     align-items: center;
-    width: 100%;
-
+    max-width: 100%;
+    width: 600px;
 }
+.hobby img{
+    border: solid 20px #fff;
+       max-width: 100%;
+ 
+    max-height: 360px;
+}
+
 .my-images img{
-   
-    max-height: 400px;
     min-height: 400px;
     margin: 10px;
+    margin: auto;
+    max-width: 560px;
+    max-height: 400px;
 }
 footer{
     background-color: rgb(27, 31, 41);
@@ -69,7 +142,6 @@ footer{
     padding: 20px;
     font-family: "Pacifico", cursive;
     text-align: center;
-    margin-top: 60px;
 }
 footer .container{
     text-align: center;
@@ -89,3 +161,27 @@ h2{
   font-weight: 400;
   font-style: normal;
 }
+.hobby {
+    background: linear-gradient(-45deg, #2E073F, #7A1CAC, #AD49E1, #EBD3F8);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .slick-prev:before, .slick-next:before{
+    color:#000 !important;
+  }
+  .slick-slide{
+    text-align: center;
+  }

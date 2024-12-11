@@ -6,30 +6,75 @@
     <title> Моя вебсторінка </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet"> <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet"> <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+    <script    src="https://code.jquery.com/jquery-3.7.1.min.js"    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
-    <header>
+    <header class="align-middle">
         <div class="container">
-            <div>
-                <h1> Моя вебсторінка </h1>
-                <ul class="header-menu">
-                    <li><a href="#about">Про мене</a></li>
-                    <li><a href="#education">Освіта</a></li>
-                    <li><a href="#hobby">Хоббі</a></li>
-                    <li><a href="#my works">Мої роботи</a></li>
-                    <li><a href="#contacts">Контакти</a></li>
-                </ul>
+        <div class="row">
+            <div class="col align-middle ">   
+                <h1 class="align-left"> Моя вебсторінка </h1>
             </div>
-        </div>
-    </header>
-  <div class="container">
-    <div class="about" id="about">
-        <h2>Про мене</h2>
-        <P>Мене звати Катерина Владика. Мені 19 років та навчаюсь у мистецькому коледжі. Також я ходжу на 3D курси і у майбутньому ходжу займатись 3D дизайном.</P>
+            <div class="col align-middle text-end ml-auto"> 
+                <nav class="navbar navbar-expand-sm navbar-dark" aria-label="Third navbar example">
+                <div class="container-fluid">
+                 
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>              
+                  <div class="collapse navbar-collapse" id="navbarsExample03">
+                    <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                      <li class="nav-item">
+                        <a  class="nav-link" href="#about">Про мене</a>
+                      </li>
+                      <li class="nav-item">
+                        <a   class="nav-link" href="#education">Освіта</a>
+                      </li>
+                      <li class="nav-item">
+                        <a  class="nav-link" href="#hobby">Хоббі</a>
+                      </li>
+                      <li class="nav-item">
+                        <a  class="nav-link" href="#works">Мої роботи</a>
+                      </li>
+                      <li class="nav-item">
+                        <a  class="nav-link" href="#contacts">Контакти</a>
+                      </li>
+                    </ul>           
+                  </div>
+                </div>
+              </nav>
+            </div>   
     </div>
-
-    <div class="education" id="education">
+</div>
+    </header>   
+ <section class="aboutsection align-middle">  
+  <div class="container  align-middle">
+   <div class="row  align-middle">
+ <div class="col-md-6  align-middle"> 
+    <img src="/assets/images/my-photo.jpg" >
+</div>
+ <div class="col-md-6  align-middle"> 
+    <div class="about" id="about">
+        <div class="p-4 m-3">
+    <h2>Про мене</h2>
+    <P>Мене звати Катерина Владика. Мені 19 років та навчаюсь у мистецькому коледжі. Також я ходжу на 3D курси і у майбутньому збираюсь займатись 3D дизайном.</P>
+</div> 
+</div>
+ </div>    
+   </div>       
+    </section>
+ <section class="education" id="education">
+    <div class="container  align-middle">
+        <div class="row  align-middle">
+      <div class="col-md-6  align-middle education-info"> 
+        <div class="p-4 m-3">
         <h2>Освіта</h2>
         <p>Я навчаюсь на 5 курсі <b>Львівського коледжу декоративного та ужиткового мистецтва імені Івана
             Труша.</b> Моя спеціальність - <i>Реставрація монументального живопису</i>. Там ми вивчаємо різні техніки малярства(композицію), реставраційні процеси, історію мистецтв і т.д.</p>
@@ -38,27 +83,61 @@
             <li>Курс: Реставрація</li>
             <li>Курс: Історія мистецтва</li>
         </ul>
+        </div>
     </div>
+<div class="col-md-6  align-middle education-photo text-center"> 
 
-    <div class="hobby" id="hobby">
-        <h2>Мої хоббі</h2>
-        <ul>
-            <li>Спорт: я ходжу на sky-jumping та stretching.</li>
-            <li>3D дезайн: ходжу на курси по 3D та працюю і вивчаю ZBrush.</li>
-            <li>Музика: граю на скрипці у вільний час та люблю слухати музику різних жанрів.</li>
-        </ul>
-    </div>
+<img src="/assets/images/koledzh_trusha_logo.jpg"/>
+<img src="/assets/images/images.jpg" class="koledzh">
+</div>
+</div>
+</div>
+</section>
+ <section  class="hobby" id="hobby">  
+ <div class="container  align-middle">
+    <div class="row">
+        <div class="col-md-6  align-middle">
+            <img src="/assets/images/Jumping-Party.jpg">
+        </div>
+        <div class="col-md-6  align-middle hobby-info">
+            <div class="p-4 m-3">
+                <h2>Мої хоббі</h2>
+                <ul>
+                    <li>Спорт: я ходжу на sky-jumping та stretching.</li>
+                    <li>3D дезайн: ходжу на курси по 3D, де вивчаю ZBrush.</li>
+                    <li>Музика: граю на скрипці у вільний час та люблю слухати музику різних жанрів.</li>
+                </ul>
+            </div>
 
-    <div class="works" id="works">
-        <h2>Мої роботи</h2>
-        <p>Серед моїх робіт є як відреставровані роботи, так і 3D арти, і картини з композиції.</p>
-       <div class="my-images">
-        <img src="/assets/images/IMG_1858.JPG" >
-        <img src="https://media.sketchfab.com/models/1e2630ddf1c845b6badf50753e853885/thumbnails/a6ad9c92e2d24b5b9d4074e334e77eea/abf3549a29d94266b454d1f63f0df8e3.jpeg" >
-        <img src="/assets/images/659f50c572e3d (1).jpeg">
-        <img src="https://media.sketchfab.com/models/e38a20a370094f97aaae18b05c779925/thumbnails/fa4eccdd9e174f4e81fd0b0235a77d47/8d7cf5b5f33c490ea723c83e7570b7a3.jpeg" >
+        </div>
     </div>
-     </div>
+ </div>
+</section>
+<section  class="works" id="works">
+    <div class="container  align-middle">
+        <div class="row">
+            <div class="col-md-6  align-middle works-info">
+                <div class="p-4 m-3">
+                    <h2>Мої роботи</h2>
+                    <p>Серед моїх робіт є як відреставровані роботи, так і 3D арти, і картини з композиції.</p>
+                 </div>
+            </div>
+            <div class="col-md-6  align-middle text-center">
+                <div class="my-images">                   
+                        <div><img src="/assets/images/IMG_1858.JPG" ></div>
+                        <div>
+                            <img src="https://media.sketchfab.com/models/1e2630ddf1c845b6badf50753e853885/thumbnails/a6ad9c92e2d24b5b9d4074e334e77eea/abf3549a29d94266b454d1f63f0df8e3.jpeg" >
+                        </div>
+                        <div> <img src="/assets/images/659f50c572e3d (1).jpeg"></div>
+                        <div>
+                             <img src="https://media.sketchfab.com/models/e38a20a370094f97aaae18b05c779925/thumbnails/fa4eccdd9e174f4e81fd0b0235a77d47/8d7cf5b5f33c490ea723c83e7570b7a3.jpeg" >
+                        </div>  
+                </div>         
+            </div>
+        </div>
+    </div>
+</section>
+
 
     </body>  
 </div>
@@ -76,5 +155,15 @@
     </div>
     </div>
 </footer>
+<script>
+    
+$('.my-images').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true
+});
+</script>
 </body>
 </html>
